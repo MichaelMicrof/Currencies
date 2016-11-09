@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Rate.js"></script>
+    <script src="Controller.js"></script>
+    <script src="Initials.js"></script>
+    <link rel="stylesheet" href="currencies.css">
+</head>
+<body>
+<script>
+
+    var currenciesList =
+            ["USD", "EUR", "ILS", "CHF", "GBP", "JPY", "CNY","RUB", "UAH","KZT"];
+
+    var step = 5000;
+
+    makeRatesTable(currenciesList);
+    makeTable(currenciesList);
+    fillRatesArray(currenciesList);
+
+    setInterval(function () {
+        fillRatesArray(currenciesList);
+    }, step);
+
+    document.getElementById("but").onclick = function () {
+        //alert("Hello");
+        fillRatesArray(currenciesList);
+    };
+
+
+</script>
+</body>
+</html>

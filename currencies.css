@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    font-family: Arial;
+}
+
+body{
+    background: url("fon.jpg");
+}
+.currTable{
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    border-collapse: collapse;
+}
+
+.currTable td{
+    text-align: center;
+    width: 8vw;
+    height: 6vh;
+    border: 1px solid blue;
+    font-weight: 800;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.currTable tr:first-child{
+    color: darkgray;
+}
+
+.currTable td:first-child{
+    background-color: darkgray;
+    color: whitesmoke;
+}
+
+.cap{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 800;
+    color: #0000FF;
+    background-color: white;
+    opacity: 0.8;
+    border-left: 5px solid darkblue;
+    border-right: 5px solid darkblue;
+    border-top: 5px solid darkblue;
+}
+
+#but{
+    color: whitesmoke;
+    background-color: #0000FF;
+}
